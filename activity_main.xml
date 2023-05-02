@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAddLutemon"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="switchToAddLutemonActivity"
+        android:text="Lisää uusi Lutemon"
+        app:layout_constraintBottom_toTopOf="@+id/btnListLutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnListLutemon"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="switchToListLutemonActivity"
+        android:text="Listaa Lutemonit"
+        app:layout_constraintBottom_toTopOf="@+id/btnMoveLutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddLutemon" />
+
+    <Button
+        android:id="@+id/btnMoveLutemon"
+        android:layout_width="193dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="switchToMoveLutemonActivity"
+        android:text="Siirrä lutemoneja"
+        app:layout_constraintBottom_toTopOf="@+id/btnFightLutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListLutemon" />
+
+    <Button
+        android:id="@+id/btnFightLutemon"
+        android:layout_width="198dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="switchToBattleFieldActivity"
+        android:text="Siirry taisteluareenalle"
+        app:layout_constraintBottom_toTopOf="@+id/btnTrainLutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMoveLutemon" />
+
+    <Button
+        android:id="@+id/btnTrainLutemon"
+        android:layout_width="198dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="switchToTrainingAreaActivity"
+        android:text="Siirry treeniareenalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFightLutemon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
