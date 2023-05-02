@@ -1,0 +1,2 @@
+# Harkkatyo
+Olio-ohjelmoinnin harjoitustyö
